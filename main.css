@@ -4,8 +4,35 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark: #250057;
+}
+
 body {
-  background-color: #250057;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.light {
+  --dark: yellow;
+}
+
+.sund {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transform: translate(500%);
+  width: 10%;
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-sun {
+  color: orange;
+  cursor: pointer;
 }
 
 .box {
